@@ -1,0 +1,19 @@
+//sum of digit of number
+#include <stdio.h>
+#include<math.h>
+int dig(int a){
+    int rev=0,x=a; 
+    while(a>0){
+        rev=(rev)+(a%10);
+        a /= 10;
+    }
+    printf("%d",rev);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    dig(a);
+    return 0;
+}
