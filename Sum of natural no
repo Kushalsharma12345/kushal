@@ -1,0 +1,19 @@
+//sum of natural number
+#include <stdio.h>
+#include<math.h>
+int sum(int a){
+    int i,s=0;
+    for(i=1;i<=a;i++){
+        s += i ;
+    }
+    printf("%d",s);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    printf("the sum of numbers are:");
+    sum(a);
+    return 0;
+}
