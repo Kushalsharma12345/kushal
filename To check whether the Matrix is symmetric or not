@@ -1,0 +1,29 @@
+//to check matrix is symmetric matrix or not
+#include<stdio.h>
+int main(){
+    int n,m,z=0;
+    printf("enter row");
+    scanf("%d",&n);
+    
+    printf("enter col");
+    scanf("%d",&m);
+    int a[n][m],i,j;
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<m;j++){
+            if(a[i][j] == a[j][i]){
+                z++;
+            }
+        }
+    }
+    if(z == n*m){
+    printf("symmetric matrix");
+    }
+    else{
+        printf("not a symmetric matrix");
+    }
+}
