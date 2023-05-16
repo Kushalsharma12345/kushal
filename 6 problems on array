@@ -1,0 +1,204 @@
+#include <stdio.h>
+
+int main()
+{
+    /*int n,m,pos,el,i;
+    printf("enter size:");
+    scanf("%d",&n);
+    int ar[n];
+    printf("enter elements:");
+    scanf("%d%d",&pos,&el);
+    if(m>n)
+    {
+        printf("insertion is not possible.");
+    }
+    else
+    {
+        printf("enter elements:");
+        for(i=0;i<n;i++)
+        {
+            
+        }
+    }
+    
+    
+    for print an 2-D array
+    
+    int a,b,i,j;
+    printf("enter no.of rows:");
+    scanf("%d",&a);
+    printf("enter no. of columns:");
+    scanf("%d",&b);
+    int arr[a][b];
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            printf("%d",arr[i][j]);
+        }
+        printf("\n");
+    }
+    
+    
+    for print transpose of an 2-D array
+    
+    int a,b,i,j;
+    printf("enter no.of rows:");
+    scanf("%d",&a);
+    printf("enter no. of columns:");
+    scanf("%d",&b);
+    int arr[a][b];
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            printf("%d",arr[j][i]);
+        }
+        printf("\n");
+    }
+    
+    
+    for print add of two array:
+    
+    
+    int a,b,c,i,j;
+    printf("enter no of rows:");
+    scanf("%d",&a);
+    printf("enter no of columns:");
+    scanf("%d",&b);
+    int arr1[a][b];
+    int arr2[a][b];
+    int arr3[a][b];
+    printf("enter elements of first array:");
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+    printf("enter elements of second array:");
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr2[i][j]);
+            
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            arr3[i][j]=arr1[i][j]+arr2[i][j];
+            
+        }
+        
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            printf(" %d ",arr3[i][j]);
+        }
+        printf("\n");
+        
+    }
+    
+   // for print subtract of two array:
+    
+    int a,b,c,i,j;
+    printf("enter no of rows:");
+    scanf("%d",&a);
+    printf("enter no of columns:");
+    scanf("%d",&b);
+    int arr1[a][b];
+    int arr2[a][b];
+    int arr3[a][b];
+    printf("enter elements of first array:");
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+    printf("enter elements of second array:");
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&arr2[i][j]);
+            
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            arr3[i][j]=arr1[i][j]-arr2[i][j];
+            
+        }
+        
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            printf(" %d ",arr3[i][j]);
+        }
+        printf("\n");
+        
+    }*/
+    
+    
+    
+    int a,b,c,d,i,j;
+    printf("enter the no of rows in first array:");
+    scanf("%d",&a);
+    printf("enter the no oif columns in first array:");
+    scanf("%d",&b);
+    int arr1[a][b];
+    printf("enter the no of rows in second array:");
+    scanf("%d",&c);
+    printf("enter the no of columns in second array:");
+    scanf("%d",&d);
+    int arr2[c][d];
+    int arr3[a][d];
+    if(b!=c)
+    {
+        printf("multiplication is not possible.");
+    }
+    else{
+        for(i=0;i<a;i++)
+        {
+            for(j=0;j<b;j++)
+            {
+                arr3[i][j]=arr1[i][j]*arr2[j][i];
+            }
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(j=0;j<b;j++)
+        {
+            printf("%d",arr3[i][j]);
+        }
+    }
+
+    return 0;
+}
