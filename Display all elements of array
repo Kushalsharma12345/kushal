@@ -1,0 +1,20 @@
+//to diplay element  of array
+#include <stdio.h>
+#include<math.h>
+int array(int a){
+    int arr[a],i=0;
+    for(i=0;i<=a;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<=a;i++){
+        printf("%d ",arr[i]);
+    }
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    array(a);
+    return 0;
+}
