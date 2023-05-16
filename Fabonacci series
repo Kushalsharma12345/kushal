@@ -1,0 +1,25 @@
+//fabonacci of number
+#include <stdio.h>
+#include<math.h>
+int fab(int a){
+
+	int n=0,i=0,j=1,k;
+	printf("%d %d ",i,j);
+	while(n<=(a-3))
+	{
+		k=i+j;
+		i=j;
+		j=k;
+		printf("%d ",k);
+		n++;
+	}
+
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    fab(a);
+    return 0;
+}
