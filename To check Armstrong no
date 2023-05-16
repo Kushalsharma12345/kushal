@@ -1,0 +1,27 @@
+// to check armstrong number
+#include <stdio.h>
+#include<math.h>
+int arm(int a){
+    
+        int b,c,i,rev=0,x=a;
+        b=log10(a)+1;
+        for(i=0;a>0;i++){
+            rev=rev+pow(a%10,b);
+            a /= 10;
+        }
+        if(x==rev){
+            printf("armstrong");
+        }
+        else{
+            printf("not");
+        }
+    
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    arm(a);
+    return 0;
+}
