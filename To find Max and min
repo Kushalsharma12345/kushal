@@ -1,0 +1,20 @@
+// to find max and min
+#include <stdio.h>
+int find(int a,int b){
+    if(a>b){
+        printf("the maximum is %d\n",a);
+        printf("the minimum is %d\n",b);
+    }
+    else{
+        printf("the maximum is %d\n",b);
+        printf("the minimum is %d\n",a);
+    }
+}
+void main()
+{
+    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    find(a,b);
+    return ;
+}
