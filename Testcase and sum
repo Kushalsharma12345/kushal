@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+
+    int testcase,n[20],i,sum;
+
+    scanf("%d",&testcase);
+
+    for (i=0;i<testcase;i++){
+
+        scanf("%d",&n[i]);
+
+    }
+
+    for (i=0;i<testcase;i++){
+
+        sum=0;
+
+        while (n[i]!=0){
+
+            sum=sum+n[i]%10;
+
+            n[i]=n[i]/10;
+
+        }
+
+        printf("%d\n",sum);
+
+    }
+
+    return 0;
+
+}
