@@ -1,0 +1,16 @@
+//power of number
+#include <stdio.h>
+#include<math.h>
+int power(int a,int b){
+    int k;
+    k=pow(a,b);
+    return k ;
+}
+int main()
+{
+    
+    int a,k,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",power(a,b));
+    return 0;
+}
