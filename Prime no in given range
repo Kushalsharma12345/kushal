@@ -1,0 +1,24 @@
+// print prime number in given range
+#include<stdio.h>
+int prime(int s,int e){
+    int k,i,j;
+    for(i=s;i<=e;i++){
+        k=0;
+        for(j=1;j<=i;j++){
+            if(i%j==0){
+              k+=1;
+            }
+        }
+        if(k==2){
+            printf("%d\n",i);
+        }
+    }
+}
+int main(){
+    int s,e;
+    printf("enter limits to check");
+    scanf("%d",&s);
+    scanf("%d",&e);
+    prime(s,e);
+    return 0;
+}
