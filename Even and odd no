@@ -1,0 +1,31 @@
+//even and odd number
+#include <stdio.h>
+#include<math.h>
+int even(int a){
+    int i;
+    for(i=0;i<=a;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
+}
+int odd(int a){
+    int i;
+    for(i=0;i<=a;i++){
+        if(i%2!=0){
+            printf("%d\n",i);
+        }
+    }
+}
+int main()
+{
+    
+    int a,k;
+    scanf("%d",&a);
+    printf("the even numbers are:");
+    even(a);
+    
+    printf("the odd numbers are:");
+    odd(a);
+    return 0;
+}
