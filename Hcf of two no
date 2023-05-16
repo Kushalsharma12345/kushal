@@ -1,0 +1,30 @@
+//hcf of number
+#include <stdio.h>
+#include<math.h>
+int hcf(int a,int b){
+    int i,hcf;
+    if(a>b){
+        i=a;
+    }
+    else{
+        i=b;
+    }
+    while(i<=(a*b)){
+        if((i%a==0) && (i%b==0)){
+            break;
+            
+        }
+            i++;
+        }
+        hcf = (a*b)/i;
+       printf("%d",hcf);
+    
+}
+int main()
+{
+    
+    int a,b;
+    scanf("%d%d",&a,&b);
+    hcf(a,b);
+    return 0;
+}
