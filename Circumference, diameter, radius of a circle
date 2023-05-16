@@ -1,0 +1,22 @@
+//circle of number
+#include <stdio.h>
+float diameter(int a){
+    return(a/2);
+}
+float circumfrance(int a){
+    return(2*3.14*a);
+}
+float area(int a){
+    return(3.14*a*a);
+}
+float main()
+{
+    
+    float a,d,c,k;
+    scanf("%f",&a);
+    k =  diameter(a);
+    c = circumfrance(a);
+    d = area(a);
+    printf("%f %f %f",k,c,d);
+    return 0;
+}
