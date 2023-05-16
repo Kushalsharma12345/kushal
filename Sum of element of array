@@ -1,0 +1,19 @@
+//to sum the element  of array
+#include <stdio.h>
+#include<math.h>
+int sarray(int a){
+    int arr[a],i,s=0;
+    for(i=0;i<=a;i++){
+        scanf("%d",&arr[i]);
+        s += arr[i];
+    }
+        printf("%d ",s);
+}
+int main()
+{
+    
+    int a;
+    scanf("%d",&a);
+    sarray(a);
+    return 0;
+}
